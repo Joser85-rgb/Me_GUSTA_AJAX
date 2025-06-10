@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contador de Me Gusta</title>
+    <script src="script.js" defer></script>
+    <style>
+        .container {
+          display: flex;
+          justify-content: center;
+          gap: 30px;
+          margin-top: 50px;
+        }
+
+        .card {
+          text-align: center;
+          border: 1px solid #ccc;
+          padding: 10px;
+          width: 150px;
+        }
+
+        .like-count {
+          font-size: 24px;
+          margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+<h2><center><b>CUAL GENERACION DE GTR PREFIERES?</b></center></h2>
+<div class="container">
+    <div class="card" data-id="1">
+        <img src="/images/r33.jpeg" alt="Imagen 1" width="120" height="80">
+        <h3><b>R33</b></h3>
+        <div class="like-count" id="count-1">0</div>
+        <button onclick="likePost(1)">Me gusta</button>
+    </div>
+
+    <div class="card" data-id="2">
+        <img src="/images/r34.jpg" alt="Imagen 2" width="120" height="80">
+        <h3><b>R34</b></h3>
+        <div class="like-count" id="count-2">0</div>
+        <button onclick="likePost(2)">Me gusta</button>
+    </div>
+
+    <div class="card" data-id="3">
+        <img src="/images/r35.jpeg" alt="Imagen 3" width="120" height="80">
+        <h3><b>R35</b></h3>
+        <div class="like-count" id="count-3">0</div>
+        <button onclick="likePost(3)">Me gusta</button>
+    </div>
+</div>
+<script src="/js/Likes.js" defer></script>
+</body>
+</html>
